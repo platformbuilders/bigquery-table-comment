@@ -1,15 +1,15 @@
-name: 'Big Query Comment Table'
-description: 'Create a table comment from BigQuery'
+name: "Big Query Comment Table"
+description: "Create a table comment from BigQuery"
 inputs:
   project-id:
-    description: 'The project ID in GCP'
+    description: "The project ID in GCP"
     required: true
   query:
-    description: 'Query to execute'
+    description: "Query to execute"
     required: true
 outputs:
   table:
-    description: 'The response in markdown table'
+    description: "The response in markdown table"
 runs:
-  using: 'node20'
-  main: 'index.js'
+  using: "node20"
+  main: "dist/index.js"

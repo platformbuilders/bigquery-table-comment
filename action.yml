@@ -7,9 +7,6 @@ inputs:
   query:
     description: "Query to execute"
     required: true
-  credentials:
-    description: "Query to execute"
-    required: true
 outputs:
   table:
     description: "The response in markdown table"

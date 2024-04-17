@@ -3,8 +3,7 @@ const github = require('@actions/github');
 
 const { BigQuery } = require('@google-cloud/bigquery');
 const bigquery = new BigQuery({
-    projectId: core.getInput('project-id'),
-    credentials: core.getInput('service-account-key')
+    projectId: core.getInput('project-id')
 });
 let tableResponse = '';
 

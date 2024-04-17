@@ -65369,8 +65369,7 @@ const github = __nccwpck_require__(8555);
 
 const { BigQuery } = __nccwpck_require__(17);
 const bigquery = new BigQuery({
-    projectId: core.getInput('project-id'),
-    credentials: core.getInput('service-account-key')
+    projectId: core.getInput('project-id')
 });
 let tableResponse = '';
 

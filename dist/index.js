@@ -65399,7 +65399,11 @@ bigquery.createQueryStream(query)
 `
     })
     .on('end', function () {
-        core.setOutput("table", tableResponse);
+        if (tableResponse.length == 0) {
+            core.setOutput("table", "No data found!");
+        } else {
+            core.setOutput("table", tableResponse);
+        }
     });
 
 bigquery.createQueryStream(query)
